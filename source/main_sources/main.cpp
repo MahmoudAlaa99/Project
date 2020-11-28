@@ -1,5 +1,6 @@
 #include <application.hpp>
 #include <shader.hpp>
+#include "../../source/Entity_component/transform_component.hpp"
 
 int flag = 0;
 class UniformsApplication : public Project::Application {
