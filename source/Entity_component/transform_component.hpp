@@ -10,6 +10,7 @@ public:
 	glm::vec3 rotation;
 	glm::vec3 scale;
     TransformComponent *parent;
+    
 
     TransformComponent(
             const glm::vec3& translation = {0,0,0},
