@@ -1,0 +1,142 @@
+[
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE -DASSETS_DIR=\"\\\"E:/CUFE/Senior-1/Computer Graphics/Project/Project/assets\\\"\" @CMakeFiles/MAIN.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\MAIN.dir\\source\\main_sources\\main.cpp.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\source\\main_sources\\main.cpp\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/source/main_sources/main.cpp"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE -DASSETS_DIR=\"\\\"E:/CUFE/Senior-1/Computer Graphics/Project/Project/assets\\\"\" @CMakeFiles/MAIN.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\MAIN.dir\\source\\common\\application.cpp.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\source\\common\\application.cpp\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/source/common/application.cpp"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE -DASSETS_DIR=\"\\\"E:/CUFE/Senior-1/Computer Graphics/Project/Project/assets\\\"\" @CMakeFiles/MAIN.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\MAIN.dir\\source\\common\\shader.cpp.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\source\\common\\shader.cpp\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/source/common/shader.cpp"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE -DASSETS_DIR=\"\\\"E:/CUFE/Senior-1/Computer Graphics/Project/Project/assets\\\"\" @CMakeFiles/MAIN.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\MAIN.dir\\source\\common\\mesh\\mesh-utils.cpp.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\source\\common\\mesh\\mesh-utils.cpp\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/source/common/mesh/mesh-utils.cpp"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE -DASSETS_DIR=\"\\\"E:/CUFE/Senior-1/Computer Graphics/Project/Project/assets\\\"\" @CMakeFiles/MAIN.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\MAIN.dir\\source\\common\\texture\\texture-utils.cpp.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\source\\common\\texture\\texture-utils.cpp\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/source/common/texture/texture-utils.cpp"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE -DASSETS_DIR=\"\\\"E:/CUFE/Senior-1/Computer Graphics/Project/Project/assets\\\"\" @CMakeFiles/MAIN.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\MAIN.dir\\source\\common\\texture\\screenshot.cpp.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\source\\common\\texture\\screenshot.cpp\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/source/common/texture/screenshot.cpp"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DASSETS_DIR=\"\\\"E:/CUFE/Senior-1/Computer Graphics/Project/Project/assets\\\"\" @CMakeFiles/MAIN.dir/includes_C.rsp -g -o CMakeFiles\\MAIN.dir\\vendor\\glad\\src\\gl.c.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\glad\\src\\gl.c\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/glad/src/gl.c"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE -DASSETS_DIR=\"\\\"E:/CUFE/Senior-1/Computer Graphics/Project/Project/assets\\\"\" @CMakeFiles/MAIN.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\MAIN.dir\\vendor\\imgui\\imgui.cpp.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\imgui\\imgui.cpp\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/imgui/imgui.cpp"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE -DASSETS_DIR=\"\\\"E:/CUFE/Senior-1/Computer Graphics/Project/Project/assets\\\"\" @CMakeFiles/MAIN.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\MAIN.dir\\vendor\\imgui\\imgui_demo.cpp.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\imgui\\imgui_demo.cpp\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/imgui/imgui_demo.cpp"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE -DASSETS_DIR=\"\\\"E:/CUFE/Senior-1/Computer Graphics/Project/Project/assets\\\"\" @CMakeFiles/MAIN.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\MAIN.dir\\vendor\\imgui\\imgui_draw.cpp.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\imgui\\imgui_draw.cpp\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/imgui/imgui_draw.cpp"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE -DASSETS_DIR=\"\\\"E:/CUFE/Senior-1/Computer Graphics/Project/Project/assets\\\"\" @CMakeFiles/MAIN.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\MAIN.dir\\vendor\\imgui\\imgui_widgets.cpp.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\imgui\\imgui_widgets.cpp\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/imgui/imgui_widgets.cpp"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE -DASSETS_DIR=\"\\\"E:/CUFE/Senior-1/Computer Graphics/Project/Project/assets\\\"\" @CMakeFiles/MAIN.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\MAIN.dir\\vendor\\imgui\\imgui_impl\\imgui_impl_glfw.cpp.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\imgui\\imgui_impl\\imgui_impl_glfw.cpp\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE -DASSETS_DIR=\"\\\"E:/CUFE/Senior-1/Computer Graphics/Project/Project/assets\\\"\" @CMakeFiles/MAIN.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\MAIN.dir\\vendor\\imgui\\imgui_impl\\imgui_impl_opengl3.cpp.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\imgui\\imgui_impl\\imgui_impl_opengl3.cpp\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/vendor/glfw/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\context.c.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\glfw\\src\\context.c\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/glfw/src/context.c"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/vendor/glfw/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\init.c.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\glfw\\src\\init.c\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/glfw/src/init.c"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/vendor/glfw/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\input.c.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\glfw\\src\\input.c\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/glfw/src/input.c"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/vendor/glfw/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\monitor.c.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\glfw\\src\\monitor.c\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/glfw/src/monitor.c"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/vendor/glfw/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\vulkan.c.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\glfw\\src\\vulkan.c\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/glfw/src/vulkan.c"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/vendor/glfw/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\window.c.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\glfw\\src\\window.c\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/glfw/src/window.c"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/vendor/glfw/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\win32_init.c.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\glfw\\src\\win32_init.c\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/glfw/src/win32_init.c"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/vendor/glfw/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\win32_joystick.c.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\glfw\\src\\win32_joystick.c\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/glfw/src/win32_joystick.c"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/vendor/glfw/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\win32_monitor.c.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\glfw\\src\\win32_monitor.c\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/glfw/src/win32_monitor.c"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/vendor/glfw/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\win32_time.c.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\glfw\\src\\win32_time.c\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/glfw/src/win32_time.c"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/vendor/glfw/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\win32_thread.c.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\glfw\\src\\win32_thread.c\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/glfw/src/win32_thread.c"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/vendor/glfw/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\win32_window.c.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\glfw\\src\\win32_window.c\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/glfw/src/win32_window.c"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/vendor/glfw/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\wgl_context.c.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\glfw\\src\\wgl_context.c\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/glfw/src/wgl_context.c"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/vendor/glfw/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\egl_context.c.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\glfw\\src\\egl_context.c\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/glfw/src/egl_context.c"
+},
+{
+  "directory": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/vendor/glfw/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\osmesa_context.c.obj -c \"E:\\CUFE\\Senior-1\\Computer Graphics\\Project\\Project\\vendor\\glfw\\src\\osmesa_context.c\"",
+  "file": "E:/CUFE/Senior-1/Computer Graphics/Project/Project/vendor/glfw/src/osmesa_context.c"
+}
+]

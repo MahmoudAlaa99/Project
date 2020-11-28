@@ -1,0 +1,84 @@
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: D:/CCE/CCE SENIOR 1/graphics/Project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_db945.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.7.0+b89cb5fde for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.27.29112 for x64
+  CheckIncludeFile.c
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_db945.dir\Debug\\" /Fd"cmTC_db945.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "D:\CCE\CCE SENIOR 1\graphics\Project\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+D:\CCE\CCE SENIOR 1\graphics\Project\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\CCE\CCE SENIOR 1\graphics\Project\build\CMakeFiles\CMakeTmp\cmTC_db945.vcxproj]
+
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: G:/Uni/Senior-1/Graphics/Project/Project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_0971d.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.7.0+b89cb5fde for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.27.29112 for x86
+  CheckIncludeFile.c
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0971d.dir\Debug\\" /Fd"cmTC_0971d.dir\Debug\vc142.pdb" /Gd /TC /analyze- /errorReport:queue "G:\Uni\Senior-1\Graphics\Project\Project\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+G:\Uni\Senior-1\Graphics\Project\Project\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [G:\Uni\Senior-1\Graphics\Project\Project\build\CMakeFiles\CMakeTmp\cmTC_0971d.vcxproj]
+
+
+
+Performing C SOURCE FILE Test _GLFW_HAS_ASLR failed with the following output:
+Change Dir: E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe cmTC_fc1c5/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_fc1c5.dir\build.make CMakeFiles/cmTC_fc1c5.dir/build
+mingw32-make[1]: Entering directory 'E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fc1c5.dir/src.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe -D_GLFW_HAS_ASLR  -Wl,--dynamicbase -o CMakeFiles\cmTC_fc1c5.dir\src.c.obj -c "E:\CUFE\Senior-1\Computer Graphics\Project\Project\build\CMakeFiles\CMakeTmp\src.c"
+Linking C executable cmTC_fc1c5.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_fc1c5.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_fc1c5.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_fc1c5.dir/objects.a @CMakeFiles\cmTC_fc1c5.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  -Wl,--dynamicbase -Wl,--whole-archive CMakeFiles\cmTC_fc1c5.dir/objects.a -Wl,--no-whole-archive -o cmTC_fc1c5.exe -Wl,--out-implib,libcmTC_fc1c5.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_fc1c5.dir\linklibs.rsp
+collect2.exe: error: ld returned 5 exit status
+mingw32-make[1]: *** [CMakeFiles\cmTC_fc1c5.dir\build.make:107: cmTC_fc1c5.exe] Error 1
+mingw32-make[1]: *** Deleting file 'cmTC_fc1c5.exe'
+mingw32-make[1]: Leaving directory 'E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/CMakeFiles/CMakeTmp'
+mingw32-make: *** [makefile:139: cmTC_fc1c5/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test _GLFW_HAS_64ASLR failed with the following output:
+Change Dir: E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe cmTC_8cc64/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_8cc64.dir\build.make CMakeFiles/cmTC_8cc64.dir/build
+mingw32-make[1]: Entering directory 'E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8cc64.dir/src.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe -D_GLFW_HAS_64ASLR  -Wl,--high-entropy-va -o CMakeFiles\cmTC_8cc64.dir\src.c.obj -c "E:\CUFE\Senior-1\Computer Graphics\Project\Project\build\CMakeFiles\CMakeTmp\src.c"
+Linking C executable cmTC_8cc64.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_8cc64.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_8cc64.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_8cc64.dir/objects.a @CMakeFiles\cmTC_8cc64.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  -Wl,--high-entropy-va -Wl,--whole-archive CMakeFiles\cmTC_8cc64.dir/objects.a -Wl,--no-whole-archive -o cmTC_8cc64.exe -Wl,--out-implib,libcmTC_8cc64.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_8cc64.dir\linklibs.rsp
+collect2.exe: error: ld returned 5 exit status
+mingw32-make[1]: *** [CMakeFiles\cmTC_8cc64.dir\build.make:107: cmTC_8cc64.exe] Error 1
+mingw32-make[1]: *** Deleting file 'cmTC_8cc64.exe'
+mingw32-make[1]: Leaving directory 'E:/CUFE/Senior-1/Computer Graphics/Project/Project/build/CMakeFiles/CMakeTmp'
+mingw32-make: *** [makefile:139: cmTC_8cc64/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_08961.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.7.0+b89cb5fde for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.27.29112 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_08961.dir\Debug\\" /Fd"cmTC_08961.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\CMakeFiles\CMakeTmp\cmTC_08961.vcxproj]
+
+
+

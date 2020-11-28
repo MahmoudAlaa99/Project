@@ -1,0 +1,10 @@
+^D:\CCE\CCE SENIOR 1\GRAPHICS\PROJECTPHASE1\PROJECT\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project" "-BD:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/build" --check-stamp-file "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

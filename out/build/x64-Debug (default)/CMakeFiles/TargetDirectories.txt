@@ -1,0 +1,8 @@
+G:/Uni/Senior-1/Graphics/Project/Project/out/build/x64-Debug (default)/CMakeFiles/edit_cache.dir
+G:/Uni/Senior-1/Graphics/Project/Project/out/build/x64-Debug (default)/CMakeFiles/MAIN.dir
+G:/Uni/Senior-1/Graphics/Project/Project/out/build/x64-Debug (default)/CMakeFiles/rebuild_cache.dir
+G:/Uni/Senior-1/Graphics/Project/Project/out/build/x64-Debug (default)/vendor/glfw/CMakeFiles/edit_cache.dir
+G:/Uni/Senior-1/Graphics/Project/Project/out/build/x64-Debug (default)/vendor/glfw/CMakeFiles/rebuild_cache.dir
+G:/Uni/Senior-1/Graphics/Project/Project/out/build/x64-Debug (default)/vendor/glfw/src/CMakeFiles/rebuild_cache.dir
+G:/Uni/Senior-1/Graphics/Project/Project/out/build/x64-Debug (default)/vendor/glfw/src/CMakeFiles/glfw.dir
+G:/Uni/Senior-1/Graphics/Project/Project/out/build/x64-Debug (default)/vendor/glfw/src/CMakeFiles/edit_cache.dir
