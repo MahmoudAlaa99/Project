@@ -1,4 +1,4 @@
-# Install script for directory: D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/vendor/glfw
+# Install script for directory: G:/Uni/Senior-1/Graphics/ProjectGithub/Project/vendor/glfw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/build/vendor/glfw/src/cmake_install.cmake")
+  include("G:/Uni/Senior-1/Graphics/ProjectGithub/Project/build/vendor/glfw/src/cmake_install.cmake")
 
 endif()
 

@@ -18,14 +18,23 @@ public:
             const glm::vec3& scale = {1,1,1}
             ): translation(translation), rotation(rotation), scale(scale) {}
 
-    glm::mat4 to_mat4() const {
+    glm::mat4 getTransform() const {
         return glm::translate(glm::mat4(1.0f), translation) *
                glm::yawPitchRoll(rotation.y, rotation.x, rotation.z) *
                glm::scale(glm::mat4(1.0f), scale);
     }
     glm::mat4 getPosition()
     {
-        position*= to_mat4();
+        position*= getTransform();
+    }
+    void setRotation(glm::vec3 R){
+        rotation = R;
+    }
+    void setTranslation(glm::vec3 T){
+        translation = T;
+    }
+    void setScale(glm::vec3 S){
+        scale = S;
     }
 
 };

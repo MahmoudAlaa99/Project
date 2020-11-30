@@ -26,6 +26,10 @@ namespace Project {
         // The camera position, camera forward direction and camera up direction
         glm::vec3 eye = {0, 0, 0}, direction = {0, 0, -1}, up = {0, 1, 0};
 
+        
+        // eye = translation, direction = transform * vector in -Z direction, up = transform * vector in Y direction,
+        
+        
         CameraType type = CameraType::Perspective;
 
         // The field_of_view_y is in radians and is only used for perspective cameras
@@ -40,6 +44,12 @@ namespace Project {
             up = {0, 1, 0};
         }
 
+        void setEye(glm::vec3 translation){
+            eye = translation;
+        }
+        void setDirection(glm::mat4 transform){
+            direction = transform * 
+        }
         // Setup the camera as a perspective camera
         void setupPerspective(float field_of_view_y, float aspect_ratio, float near, float far){
             this->type = CameraType::Perspective;

@@ -1,93 +1,93 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\context.c">
+    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\context.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\init.c">
+    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\init.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\input.c">
+    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\input.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\monitor.c">
+    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\monitor.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\vulkan.c">
+    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\vulkan.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\window.c">
+    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\window.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\win32_init.c">
+    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\win32_init.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\win32_joystick.c">
+    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\win32_joystick.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\win32_monitor.c">
+    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\win32_monitor.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\win32_time.c">
+    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\win32_time.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\win32_thread.c">
+    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\win32_thread.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\win32_window.c">
+    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\win32_window.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\wgl_context.c">
+    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\wgl_context.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\egl_context.c">
+    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\egl_context.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\osmesa_context.c">
+    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\osmesa_context.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\internal.h">
+    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\internal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\mappings.h">
+    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\mappings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src\glfw_config.h">
+    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src\glfw_config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\include\GLFW\glfw3.h">
+    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\include\GLFW\glfw3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\include\GLFW\glfw3native.h">
+    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\include\GLFW\glfw3native.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\win32_platform.h">
+    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\win32_platform.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\win32_joystick.h">
+    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\win32_joystick.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\wgl_context.h">
+    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\wgl_context.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\egl_context.h">
+    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\egl_context.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\osmesa_context.h">
+    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\osmesa_context.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\CMakeLists.txt" />
+    <CustomBuild Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{79722965-2ADE-3189-8C43-AA786CC1031B}</UniqueIdentifier>
+      <UniqueIdentifier>{8CF1B52A-47CE-300E-91CA-514C9273A323}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{42AB0AA1-95FE-38E4-9E10-9849360B22E8}</UniqueIdentifier>
+      <UniqueIdentifier>{858A0D4B-5393-34DD-846C-A88DC4837F49}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

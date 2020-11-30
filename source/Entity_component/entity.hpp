@@ -16,6 +16,9 @@ public:
 
   bool hasComponents();
   bool removeComponent();
-  std::shared_ptr<Component> addComp();
+  //std::shared_ptr<Component> addComp();
+  void addComponent(Component C){
+    components.push_back(C);
+  }
 
 };
