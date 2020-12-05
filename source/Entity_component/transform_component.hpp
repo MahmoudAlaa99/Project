@@ -1,4 +1,5 @@
-#include "component.hpp"
+#pragma once
+#include "../Entity_component/component.hpp"
 #include <glm/glm.hpp>
 #include <glm/gtx/euler_angles.hpp>
 
@@ -12,11 +13,20 @@ public:
     TransformComponent *parent;
     
 
-    TransformComponent(
-            const glm::vec3& translation = {0,0,0},
-            const glm::vec3& rotation = {0,0,0},
-            const glm::vec3& scale = {1,1,1}
-            ): translation(translation), rotation(rotation), scale(scale) {}
+    TransformComponent()
+    {
+            translation = glm::vec3{0,0,0};
+            rotation = glm::vec3{0,0,0};
+            scale = glm::vec3{5,5,5};
+            Ctype = Transformation;
+    }
+    TransformComponent(glm::vec3 translationI ,glm::vec3 rotationI,glm::vec3 scaleI )
+    {
+            translation = translationI;
+            rotation = rotationI;
+            scale = scaleI;
+            Ctype = Transformation;
+    }
 
     glm::mat4 getTransform() const {
         return glm::translate(glm::mat4(1.0f), translation) *

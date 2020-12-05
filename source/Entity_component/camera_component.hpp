@@ -40,22 +40,27 @@
         glm::mat4 V{}, P{}, VP{}, transform{};
 
     public:
-        Camera(){
+        CameraComponent(){
             dirtyFlags = V_DIRTY | P_DIRTY | VP_DIRTY;
             up = {0, 1, 0};
+            Ctype = Camera;
         }
 
-        void setEye(glm::vec4 vec){
-            eye = transform * vec;
+        void setEye()
+        {
+            glm::vec4 eyeVec = {0,0,0,1};
+            eye = transform * eyeVec;
         }
-        void setDirection(glm::vec3 vec){
-            direction = transform * vec;
+        void setDirection(){
+            glm::vec4 directionVec = {0,0,-1,0};
+            direction = transform * directionVec;
         }
         void setTransform(glm::mat4 T){
           transform = T;
         }
-        void setUp(glm::vec4 vec){
-          up = transform * vec;
+        void setUp(){
+            glm::vec4 upVec = {0,1,0,0};
+          up = transform * upVec;
         }
         // Setup the camera as a perspective camera
         void setupPerspective(float field_of_view_y, float aspect_ratio, float near, float far){
@@ -67,77 +72,77 @@
             dirtyFlags |= P_DIRTY | VP_DIRTY; // Both P & VP need to be regenerated
         }
 
-        // Setup the camera as an orthographic camera
-        // void setupOrthographic(float orthographic_height, float aspect_ratio, float near, float far){
-        //     this->type = CameraType::Orthographic;
-        //     this->orthographic_height = orthographic_height;
-        //     this->aspect_ratio = aspect_ratio;
-        //     this->near = near;
-        //     this->far = far;
-        //     dirtyFlags |= P_DIRTY | VP_DIRTY; // Both P & VP need to be regenerated
-        // }
+        //Setup the camera as an orthographic camera
+        void setupOrthographic(float orthographic_height, float aspect_ratio, float near, float far){
+            this->type = CameraType::Orthographic;
+            this->orthographic_height = orthographic_height;
+            this->aspect_ratio = aspect_ratio;
+            this->near = near;
+            this->far = far;
+            dirtyFlags |= P_DIRTY | VP_DIRTY; // Both P & VP need to be regenerated
+        }
 
-        // void setType(CameraType _type){
-        //     if(this->type != _type){
-        //         dirtyFlags |= P_DIRTY | VP_DIRTY;
-        //         this->type = _type;
-        //     }
-        // }
-        // void setOrthographicSize(float orthographic_height){
-        //     if(this->orthographic_height != orthographic_height){
-        //         dirtyFlags |= P_DIRTY | VP_DIRTY;
-        //         this->orthographic_height = orthographic_height;
-        //     }
-        // }
-        // void setVerticalFieldOfView(float field_of_view_y){
-        //     if(this->field_of_view_y != field_of_view_y){
-        //         dirtyFlags |= P_DIRTY | VP_DIRTY;
-        //         this->field_of_view_y = field_of_view_y;
-        //     }
-        // }
-        // void setAspectRatio(float aspect_ratio){
-        //     if(this->aspect_ratio != aspect_ratio){
-        //         dirtyFlags |= P_DIRTY | VP_DIRTY;
-        //         this->aspect_ratio = aspect_ratio;
-        //     }
-        // }
-        // void setNearPlane(float near){
-        //     if(this->near != near){
-        //         dirtyFlags |= P_DIRTY | VP_DIRTY;
-        //         this->near = near;
-        //     }
-        // }
-        // void setFarPlane(float far){
-        //     if(this->far != far){
-        //         dirtyFlags |= P_DIRTY | VP_DIRTY;
-        //         this->far = far;
-        //     }
-        // }
-        // void setEyePosition(glm::vec3 eye){
-        //     if(this->eye != eye){
-        //         dirtyFlags |= V_DIRTY | VP_DIRTY;
-        //         this->eye = eye;
-        //     }
-        // }
-        // void setDirection(glm::vec3 direction){
-        //     if(this->direction != direction){
-        //         dirtyFlags |= V_DIRTY | VP_DIRTY;
-        //         this->direction = direction;
-        //     }
-        // }
-        // void setTarget(glm::vec3 target){
-        //     glm::vec3 direction = target - eye;
-        //     if(this->direction != direction){
-        //         dirtyFlags |= V_DIRTY | VP_DIRTY;
-        //         this->direction = direction;
-        //     }
-        // }
-        // void setUp(glm::vec3 up){
-        //     if(this->up != up){
-        //         dirtyFlags |= V_DIRTY | VP_DIRTY;
-        //         this->up = up;
-        //     }
-        // }
+        void setType(CameraType _type){
+            if(this->type != _type){
+                dirtyFlags |= P_DIRTY | VP_DIRTY;
+                this->type = _type;
+            }
+        }
+        void setOrthographicSize(float orthographic_height){
+            if(this->orthographic_height != orthographic_height){
+                dirtyFlags |= P_DIRTY | VP_DIRTY;
+                this->orthographic_height = orthographic_height;
+            }
+        }
+        void setVerticalFieldOfView(float field_of_view_y){
+            if(this->field_of_view_y != field_of_view_y){
+                dirtyFlags |= P_DIRTY | VP_DIRTY;
+                this->field_of_view_y = field_of_view_y;
+            }
+        }
+        void setAspectRatio(float aspect_ratio){
+            if(this->aspect_ratio != aspect_ratio){
+                dirtyFlags |= P_DIRTY | VP_DIRTY;
+                this->aspect_ratio = aspect_ratio;
+            }
+        }
+        void setNearPlane(float near){
+            if(this->near != near){
+                dirtyFlags |= P_DIRTY | VP_DIRTY;
+                this->near = near;
+            }
+        }
+        void setFarPlane(float far){
+            if(this->far != far){
+                dirtyFlags |= P_DIRTY | VP_DIRTY;
+                this->far = far;
+            }
+        }
+        void setEyePosition(glm::vec3 eye){
+            if(this->eye != eye){
+                dirtyFlags |= V_DIRTY | VP_DIRTY;
+                this->eye = eye;
+            }
+        }
+        void setDirection(glm::vec3 direction){
+            if(this->direction != direction){
+                dirtyFlags |= V_DIRTY | VP_DIRTY;
+                this->direction = direction;
+            }
+        }
+        void setTarget(glm::vec3 target){
+            glm::vec3 direction = target - eye;
+            if(this->direction != direction){
+                dirtyFlags |= V_DIRTY | VP_DIRTY;
+                this->direction = direction;
+            }
+        }
+        void setUp(glm::vec3 up){
+            if(this->up != up){
+                dirtyFlags |= V_DIRTY | VP_DIRTY;
+                this->up = up;
+            }
+        }
 
         glm::mat4 getProjectionMatrix(){
             if(dirtyFlags & P_DIRTY){ // Only regenerate the projection matrix if its flag is dirty

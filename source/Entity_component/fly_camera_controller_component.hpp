@@ -6,7 +6,7 @@
 #include <glm/trigonometric.hpp>
 #include <glm/gtx/fast_trigonometry.hpp>
 
-#include <camera/camera.hpp>
+#include "../Entity_component/camera_component.hpp"
 #include <application.hpp>
 #include "Component.hpp"
 
@@ -15,8 +15,8 @@
     // Allows you to control the camera freely in world space
     class FlyCameraControllerComponent :public Component {
     private:
-        Application* app;
-        Camera* camera;
+        Project::Application* app;
+        CameraComponent* camera;
 
         float yaw, pitch;
         glm::vec3 position;
@@ -28,19 +28,7 @@
         bool mouse_locked = false;
 
     public:
-        glm::vec3 getPosition(){
-            
-            return position;
-        }
-        float getYaw(){
-
-            return yaw;
-        }
-        float getPitch(){
-
-            return pitch;
-        }
-        void initialize(Application* application, Camera* camera){
+        void initialize(Project::Application* application, CameraComponent* camera){
             this->app = application;
             this->camera = camera;
             yaw_sensitivity = pitch_sensitivity = 0.01f;

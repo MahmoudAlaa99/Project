@@ -51,4 +51,5 @@ add_definitions(-DASSETS_DIR=\"${CMAKE_CURRENT_SOURCE_DIR}/assets\")
 # Each target compiles one example source file and the common & vendor source files
 # Then we link GLFW with each target
 add_executable(MAIN source/main_sources/main.cpp ${COMMON_SOURCES} ${VENDOR_SOURCES})
+#add_executable(MAIN source/main_sources/ex14_projection.cpp ${COMMON_SOURCES} ${VENDOR_SOURCES})
 target_link_libraries(MAIN glfw)
