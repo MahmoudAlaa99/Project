@@ -1,19 +1,18 @@
-#ifndef Project_FLY_CAMERA_CONTROLLER_HPP
-#define Project_FLY_CAMERA_CONTROLLER_HPP
+#ifndef OUR_FLY_CAMERA_CONTROLLER_HPP
+#define OUR_FLY_CAMERA_CONTROLLER_HPP
 
 #include <glm/glm.hpp>
 #include <glm/gtc/constants.hpp>
 #include <glm/trigonometric.hpp>
 #include <glm/gtx/fast_trigonometry.hpp>
-
-#include "../Entity_component/camera_component.hpp"
+#include "component.hpp"
+#include "camera_component.hpp"
 #include <application.hpp>
-#include "Component.hpp"
 
-//namespace Project {
+
 
     // Allows you to control the camera freely in world space
-    class FlyCameraControllerComponent :public Component {
+    class FlyCameraControllerComponent : public Component {
     private:
         Project::Application* app;
         CameraComponent* camera;
@@ -28,6 +27,9 @@
         bool mouse_locked = false;
 
     public:
+        FlyCameraControllerComponent(){
+            Ctype = CameraController;
+        }
         void initialize(Project::Application* application, CameraComponent* camera){
             this->app = application;
             this->camera = camera;
@@ -117,6 +119,5 @@
         void setPositionSensitivity(glm::vec3 sensitivity){this->position_sensitivity = sensitivity;}
 
     };
-//}
 
-#endif //Project_FLY_CAMERA_CONTROLLER_HPP
+#endif //OUR_FLY_CAMERA_CONTROLLER_HPP

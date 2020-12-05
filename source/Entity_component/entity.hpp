@@ -8,6 +8,7 @@
 
 #include "../Entity_component/fly_camera_controller_component.hpp"
 #include "../Entity_component/transform_component.hpp"
+#include  "../Entity_component/fly_camera_controller_component.hpp"
 
 class Entity
 {
@@ -31,6 +32,18 @@ public:
       if ((*i)->Ctype == Camera)
       {
         return (CameraComponent *)(*i);
+      }
+    }
+    return NULL;
+  }
+  FlyCameraControllerComponent *returnControllerComp()
+  {
+    std::vector<Component *>::iterator i;
+    for (i = components.begin(); i != components.end(); i++)
+    {
+      if ((*i)->Ctype == CameraController)
+      {
+        return (FlyCameraControllerComponent *)(*i);
       }
     }
     return NULL;

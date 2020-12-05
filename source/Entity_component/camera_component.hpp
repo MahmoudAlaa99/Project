@@ -1,11 +1,11 @@
-#ifndef CAMERA_COMP_HPP
-#define CAMERA_COMP_HPP
+#ifndef OUR_CAMERA_HPP
+#define OUR_CAMERA_HPP
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
+#include "component.hpp"
 
-//namespace Project was commented out
-//namespace Project {
+
 
     // An enum for the camera projection type
     enum struct CameraType {
@@ -27,17 +27,13 @@
         // The camera position, camera forward direction and camera up direction
         glm::vec3 eye = {0, 0, 0}, direction = {0, 0, -1}, up = {0, 1, 0};
 
-        
-        // eye = translation, direction = transform * vector in -Z direction, up = transform * vector in Y direction,
-        
-        
         CameraType type = CameraType::Perspective;
 
         // The field_of_view_y is in radians and is only used for perspective cameras
         // The orthographic_height is only used for orthographic cameras
         float field_of_view_y = glm::radians(90.0f), orthographic_height = 2.0f, aspect_ratio = 1.0f, near = 0.01f, far = 100.0f;
 
-        glm::mat4 V{}, P{}, VP{}, transform{};
+        glm::mat4 V{}, P{}, VP{};
 
     public:
         CameraComponent(){
@@ -46,22 +42,6 @@
             Ctype = Camera;
         }
 
-        void setEye()
-        {
-            glm::vec4 eyeVec = {0,0,0,1};
-            eye = transform * eyeVec;
-        }
-        void setDirection(){
-            glm::vec4 directionVec = {0,0,-1,0};
-            direction = transform * directionVec;
-        }
-        void setTransform(glm::mat4 T){
-          transform = T;
-        }
-        void setUp(){
-            glm::vec4 upVec = {0,1,0,0};
-          up = transform * upVec;
-        }
         // Setup the camera as a perspective camera
         void setupPerspective(float field_of_view_y, float aspect_ratio, float near, float far){
             this->type = CameraType::Perspective;
@@ -72,7 +52,7 @@
             dirtyFlags |= P_DIRTY | VP_DIRTY; // Both P & VP need to be regenerated
         }
 
-        //Setup the camera as an orthographic camera
+        // Setup the camera as an orthographic camera
         void setupOrthographic(float orthographic_height, float aspect_ratio, float near, float far){
             this->type = CameraType::Orthographic;
             this->orthographic_height = orthographic_height;
@@ -229,6 +209,5 @@
         }
     };
 
-//}
 
-#endif //CAMERA_COMP_HPP
+#endif //OUR_CAMERA_HPP

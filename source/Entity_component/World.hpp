@@ -20,7 +20,7 @@ class RenderSystem {
       camera_matrix = cameraEntity->returnCameraComp()->getVPMatrix();
   }
 
-  void setManulCamera(glm::mat4 manualCam)
+  void setManualCamera(glm::mat4 manualCam)
   {
       camera_matrix =manualCam;
   }

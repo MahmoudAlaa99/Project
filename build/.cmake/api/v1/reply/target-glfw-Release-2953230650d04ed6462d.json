@@ -99,15 +99,15 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/vendor/glfw/include"
+					"path" : "G:/Uni/Senior-1/Graphics/ProjectGithub/Project/vendor/glfw/include"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/vendor/glfw/src"
+					"path" : "G:/Uni/Senior-1/Graphics/ProjectGithub/Project/vendor/glfw/src"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/build/vendor/glfw/src"
+					"path" : "G:/Uni/Senior-1/Graphics/ProjectGithub/Project/build/vendor/glfw/src"
 				}
 			],
 			"language" : "C",

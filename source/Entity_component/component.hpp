@@ -3,7 +3,8 @@ enum ComponentType{
   Camera,
   Transformation,
   MeshRenderer,
-  my
+  Default,
+  CameraController
 };
 
 class Component
@@ -11,7 +12,7 @@ class Component
 public:
   ComponentType Ctype;
   Component() {
-    Ctype = my;
+    Ctype = Default;
   };
   ~Component() {};
   // virtual void onInitialize();
