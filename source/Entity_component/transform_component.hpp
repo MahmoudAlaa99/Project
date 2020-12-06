@@ -11,6 +11,7 @@ public:
 	glm::vec3 rotation;
 	glm::vec3 scale;
     TransformComponent *parent;
+    bool direction;
     
 
     TransformComponent()
@@ -19,6 +20,7 @@ public:
             rotation = glm::vec3{0,0,0};
             scale = glm::vec3{5,5,5};
             Ctype = Transformation;
+            direction = false;
     }
     TransformComponent(glm::vec3 translationI ,glm::vec3 rotationI,glm::vec3 scaleI )
     {
@@ -33,7 +35,7 @@ public:
                glm::yawPitchRoll(rotation.y, rotation.x, rotation.z) *
                glm::scale(glm::mat4(1.0f), scale);
     }
-    glm::mat4 getPosition()
+    void getPosition()
     {
         position*= getTransform();
     }
@@ -46,12 +48,22 @@ public:
     void setScale(glm::vec3 S){
         scale = S;
     }
-    void update(Project::Application* app,double delta_time){
-           // position = getTransform();
-        std::cout <<"Before " << translation.x << translation.y << translation.z;
-         if(app->getKeyboard().isPressed(GLFW_KEY_K)){ 
-             rotation.z += 0.5;
-         }
-        std::cout <<"After " << translation.x << translation.y << translation.z << std::endl;
+    void updateSphere(Project::Application* app,double delta_time){
+        
+           if(translation.y > 8.5) direction = true;
+           if(direction == true) translation.y -= 0.5;
+           else translation.y += 0.5;
+           if(translation.y < -20) direction = false;
+           rotation.z+= 0.05;
+        
+    }
+    void updateCube(Project::Application* app,double delta_time){
+        
+           if(translation.x > 11) direction = true;
+           if(direction == true) translation.x -= 0.5;
+           else translation.x += 0.5;
+           if(translation.x < -30) direction = false;
+           rotation.z+= 0.05;
+        
     }
 };

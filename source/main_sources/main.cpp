@@ -26,12 +26,11 @@ class CameraProjectionApplication : public Project::Application
     Project::Mesh model;
     Project::Mesh model1;
     Project::Mesh model2;
-    mesh_renderer *obj1;
-    mesh_renderer *obj2;
-    mesh_renderer *obj3;
+    mesh_renderer *cubeMeshRenderer;
     mesh_renderer *sphereMeshRenderer;
     Entity *cameraEntity = new Entity();
-    Entity* sphereEntity = new Entity();;
+    Entity* sphereEntity = new Entity();
+    Entity* cubeEntity = new Entity();
     RenderSystem render;
 
     Project::WindowConfiguration getWindowConfiguration() override
@@ -45,10 +44,10 @@ class CameraProjectionApplication : public Project::Application
         std::string vertex = "assets/shaders/phase_1/transform.vert";
         std::string frag = "assets/shaders/phase_1/tint.frag";
 
-        // Project::mesh_utils::Cuboid(model, true);
+        Project::mesh_utils::Cuboid(model, true);
         Project::mesh_utils::Sphere(model1, {32, 16}, true);
         // Project::mesh_utils::Plane(model2, {1, 1}, true);
-
+        Project::Mesh *ptr = &model;
         Project::Mesh *ptr01 = &model1;
         glClearColor(0, 0, 0, 0);
 
@@ -69,7 +68,7 @@ class CameraProjectionApplication : public Project::Application
         CameraComponent* CC = cameraEntity->returnCameraComp();
         cameraEntity->returnControllerComp()->initialize(this, CC );
 
-//////////////// byresm el entity /////////////////////////////////
+//////////////// Initializing Sphere /////////////////////////////////
         TransformComponent *sphereTransformComp = new TransformComponent(); 
         sphereMeshRenderer = new mesh_renderer(shaderPtr, ptr01);  
         Component *temp01 = sphereTransformComp;
@@ -81,12 +80,23 @@ class CameraProjectionApplication : public Project::Application
         render.returnCameraMat(cameraEntity);  //comment to run manual camera
 ////////////////////////////////////////////////
 
+
+////////////////Initializing Cube ////////////////////////////////////////////
+TransformComponent *cubeTransformComp = new TransformComponent(); 
+        cubeMeshRenderer = new mesh_renderer(shaderPtr, ptr);  
+        Component *temp03 = cubeTransformComp;
+        Component *temp04 = cubeMeshRenderer;          
+        cubeEntity->addComponent(temp03);
+        cubeEntity->addComponent(temp04);
+        cubeEntity->returnMeshRendererComp()->initialize(vertex , frag);
+        render.addToEntityList(cubeEntity);
     }
     void onDraw(double deltaTime) override
     {
 
         glClear(GL_COLOR_BUFFER_BIT);
-        sphereEntity->returnTransformComp()->update(this, deltaTime);
+        sphereEntity->returnTransformComp()->updateSphere(this, deltaTime);
+        cubeEntity->returnTransformComp()->updateCube(this, deltaTime);
         cameraEntity->returnControllerComp()->update(deltaTime);
         //glm::mat4 VP = cameraEntity->returnCameraComp()->getVPMatrix();
        
