@@ -21,6 +21,7 @@ public:
             scale = glm::vec3{5,5,5};
             Ctype = Transformation;
             direction = false;
+            parent = NULL;
     }
     TransformComponent(glm::vec3 translationI ,glm::vec3 rotationI,glm::vec3 scaleI )
     {
@@ -28,12 +29,25 @@ public:
             rotation = rotationI;
             scale = scaleI;
             Ctype = Transformation;
+            parent = NULL;
     }
-
+    void setParent(TransformComponent *parentIn)
+    {
+        std::cout << "xx";
+        parent = parentIn;
+    }
     glm::mat4 getTransform() const {
-        return glm::translate(glm::mat4(1.0f), translation) *
+        if (parent == NULL)
+        {
+            return glm::translate(glm::mat4(1.0f), translation) *
                glm::yawPitchRoll(rotation.y, rotation.x, rotation.z) *
                glm::scale(glm::mat4(1.0f), scale);
+        }
+        else {
+            return (parent->getTransform())*(glm::translate(glm::mat4(1.0f), translation) *
+               glm::yawPitchRoll(rotation.y, rotation.x, rotation.z) *
+               glm::scale(glm::mat4(1.0f), scale));
+        }
     }
     void getPosition()
     {
