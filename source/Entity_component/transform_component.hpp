@@ -15,7 +15,7 @@ public:
 
     TransformComponent()
     {
-            translation = glm::vec3{0,0,0};
+            translation = glm::vec3{0.5,0.5,0.5};
             rotation = glm::vec3{0,0,0};
             scale = glm::vec3{5,5,5};
             Ctype = Transformation;
@@ -46,5 +46,12 @@ public:
     void setScale(glm::vec3 S){
         scale = S;
     }
-
+    void update(Project::Application* app,double delta_time){
+           // position = getTransform();
+        std::cout <<"Before " << translation.x << translation.y << translation.z;
+         if(app->getKeyboard().isPressed(GLFW_KEY_K)){ 
+             rotation.z += 0.5;
+         }
+        std::cout <<"After " << translation.x << translation.y << translation.z << std::endl;
+    }
 };

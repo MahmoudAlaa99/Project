@@ -29,7 +29,7 @@ class CameraProjectionApplication : public Project::Application
     mesh_renderer *obj1;
     mesh_renderer *obj2;
     mesh_renderer *obj3;
-    mesh_renderer *sphereMEshRenderer;
+    mesh_renderer *sphereMeshRenderer;
     Entity *cameraEntity = new Entity();
     Entity* sphereEntity = new Entity();;
     RenderSystem render;
@@ -71,9 +71,9 @@ class CameraProjectionApplication : public Project::Application
 
 //////////////// byresm el entity /////////////////////////////////
         TransformComponent *sphereTransformComp = new TransformComponent(); 
-        sphereMEshRenderer = new mesh_renderer(shaderPtr, ptr01);  
+        sphereMeshRenderer = new mesh_renderer(shaderPtr, ptr01);  
         Component *temp01 = sphereTransformComp;
-        Component *temp02 = sphereMEshRenderer;          
+        Component *temp02 = sphereMeshRenderer;          
         sphereEntity->addComponent(temp01);
         sphereEntity->addComponent(temp02);
         sphereEntity->returnMeshRendererComp()->initialize(vertex , frag);
@@ -86,6 +86,7 @@ class CameraProjectionApplication : public Project::Application
     {
 
         glClear(GL_COLOR_BUFFER_BIT);
+        sphereEntity->returnTransformComp()->update(this, deltaTime);
         cameraEntity->returnControllerComp()->update(deltaTime);
         //glm::mat4 VP = cameraEntity->returnCameraComp()->getVPMatrix();
        
