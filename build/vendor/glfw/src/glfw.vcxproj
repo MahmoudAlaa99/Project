@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{412FE007-9094-3F98-AFFA-03486303A5AC}</ProjectGuid>
+    <ProjectGuid>{D8D1120D-A36C-3D6C-B5E0-4489B78AC20F}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -59,26 +59,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glfw.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glfw.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glfw.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glfw.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\include;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\include;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
@@ -96,10 +96,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_GLFW_USE_CONFIG_H;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\include;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\include;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\include;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\include;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -112,7 +112,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\include;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\include;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -130,10 +130,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_GLFW_USE_CONFIG_H;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\include;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\include;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\include;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\include;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -146,7 +146,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\include;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\include;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -164,10 +164,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_GLFW_USE_CONFIG_H;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\include;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\include;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\include;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\include;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -180,7 +180,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\include;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\include;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -197,10 +197,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_GLFW_USE_CONFIG_H;_UNICODE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\include;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\include;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\include;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\include;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src;D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -212,10 +212,10 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule G:/Uni/Senior-1/Graphics/ProjectGithub/Project/vendor/glfw/src/CMakeLists.txt</Message>
+    <CustomBuild Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/vendor/glfw/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SG:/Uni/Senior-1/Graphics/ProjectGithub/Project -BG:/Uni/Senior-1/Graphics/ProjectGithub/Project/build --check-stamp-file G:/Uni/Senior-1/Graphics/ProjectGithub/Project/build/vendor/glfw/src/CMakeFiles/generate.stamp
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project" "-BD:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/build" --check-stamp-file "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/build/vendor/glfw/src/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -224,11 +224,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule G:/Uni/Senior-1/Graphics/ProjectGithub/Project/vendor/glfw/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/vendor/glfw/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SG:/Uni/Senior-1/Graphics/ProjectGithub/Project -BG:/Uni/Senior-1/Graphics/ProjectGithub/Project/build --check-stamp-file G:/Uni/Senior-1/Graphics/ProjectGithub/Project/build/vendor/glfw/src/CMakeFiles/generate.stamp
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project" "-BD:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/build" --check-stamp-file "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/build/vendor/glfw/src/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -237,11 +237,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule G:/Uni/Senior-1/Graphics/ProjectGithub/Project/vendor/glfw/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/vendor/glfw/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SG:/Uni/Senior-1/Graphics/ProjectGithub/Project -BG:/Uni/Senior-1/Graphics/ProjectGithub/Project/build --check-stamp-file G:/Uni/Senior-1/Graphics/ProjectGithub/Project/build/vendor/glfw/src/CMakeFiles/generate.stamp
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project" "-BD:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/build" --check-stamp-file "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/build/vendor/glfw/src/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -250,11 +250,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule G:/Uni/Senior-1/Graphics/ProjectGithub/Project/vendor/glfw/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/vendor/glfw/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SG:/Uni/Senior-1/Graphics/ProjectGithub/Project -BG:/Uni/Senior-1/Graphics/ProjectGithub/Project/build --check-stamp-file G:/Uni/Senior-1/Graphics/ProjectGithub/Project/build/vendor/glfw/src/CMakeFiles/generate.stamp
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project" "-BD:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/build" --check-stamp-file "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/build/vendor/glfw/src/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -263,40 +263,40 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\context.c" />
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\init.c" />
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\input.c" />
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\monitor.c" />
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\vulkan.c" />
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\window.c" />
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\win32_init.c" />
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\win32_joystick.c" />
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\win32_monitor.c" />
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\win32_time.c" />
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\win32_thread.c" />
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\win32_window.c" />
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\wgl_context.c" />
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\egl_context.c" />
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\osmesa_context.c" />
-    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\internal.h" />
-    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\mappings.h" />
-    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\vendor\glfw\src\glfw_config.h" />
-    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\include\GLFW\glfw3.h" />
-    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\include\GLFW\glfw3native.h" />
-    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\win32_platform.h" />
-    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\win32_joystick.h" />
-    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\wgl_context.h" />
-    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\egl_context.h" />
-    <ClInclude Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glfw\src\osmesa_context.h" />
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\context.c" />
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\init.c" />
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\input.c" />
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\monitor.c" />
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\vulkan.c" />
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\window.c" />
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\win32_init.c" />
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\win32_joystick.c" />
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\win32_monitor.c" />
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\win32_time.c" />
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\win32_thread.c" />
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\win32_window.c" />
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\wgl_context.c" />
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\egl_context.c" />
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\osmesa_context.c" />
+    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\internal.h" />
+    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\mappings.h" />
+    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\vendor\glfw\src\glfw_config.h" />
+    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\include\GLFW\glfw3.h" />
+    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\include\GLFW\glfw3native.h" />
+    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\win32_platform.h" />
+    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\win32_joystick.h" />
+    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\wgl_context.h" />
+    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\egl_context.h" />
+    <ClInclude Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\vendor\glfw\src\osmesa_context.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\ZERO_CHECK.vcxproj">
-      <Project>{19ECE75A-747E-3D75-B4D7-7995D1D33C88}</Project>
+    <ProjectReference Include="D:\CCE\CCE SENIOR 1\graphics\ProjectPhase1\Project\build\ZERO_CHECK.vcxproj">
+      <Project>{43B8A63C-3EE7-35DB-BC3F-59A3707F6479}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

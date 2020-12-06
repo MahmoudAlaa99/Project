@@ -17,8 +17,10 @@
 #include "../Entity_component/transform_component.hpp"
 #include "../Entity_component/fly_camera_controller_component.hpp"
 #include <string>
+#include "../main_sources/State_management/state.hpp"
+#include "../main_sources/cube_state.hpp"
 
-class CameraProjectionApplication : public Project::Application
+class AnimationState : public State
 {
     CameraComponent *cameraComp = new CameraComponent();
     FlyCameraControllerComponent *controllerComp = new FlyCameraControllerComponent(); 
@@ -33,17 +35,18 @@ class CameraProjectionApplication : public Project::Application
     Entity* cubeEntity = new Entity();
     RenderSystem render;
 
-    Project::WindowConfiguration getWindowConfiguration() override
-    {
-        return {"Projection", {1280, 720}, false};
-    }
+    // Project::WindowConfiguration getWindowConfiguration() override
+    // {
+    //     return {"Projection", {1280, 720}, false};
+    // }
 
 
-    void onInitialize() override
+    void onInitialize(Project::Application* appToUse) override
     {
+        app = appToUse;
+        // Project::Application* app;
         std::string vertex = "assets/shaders/phase_1/transform.vert";
         std::string frag = "assets/shaders/phase_1/tint.frag";
-
         Project::mesh_utils::Cuboid(model, true);
         Project::mesh_utils::Sphere(model1, {32, 16}, true);
         // Project::mesh_utils::Plane(model2, {1, 1}, true);
@@ -53,7 +56,8 @@ class CameraProjectionApplication : public Project::Application
 
         Project::ShaderProgram *shaderPtr = &program;
          int width, height;
-        glfwGetFramebufferSize(window, &width, &height);
+
+        glfwGetFramebufferSize(app->getWindow(), &width, &height);
 
         cameraComp->setEyePosition({10, 10, 10});
         cameraComp->setTarget({0, 0, 0});
@@ -66,7 +70,7 @@ class CameraProjectionApplication : public Project::Application
         Component* controllerTemp = controllerComp;
         cameraEntity->addComponent(controllerTemp);
         CameraComponent* CC = cameraEntity->returnCameraComp();
-        cameraEntity->returnControllerComp()->initialize(this, CC );
+        cameraEntity->returnControllerComp()->initialize(app, CC );
 
 //////////////// Initializing Sphere /////////////////////////////////
         TransformComponent *sphereTransformComp = new TransformComponent(); 
@@ -95,8 +99,8 @@ TransformComponent *cubeTransformComp = new TransformComponent();
     {
 
         glClear(GL_COLOR_BUFFER_BIT);
-        sphereEntity->returnTransformComp()->updateSphere(this, deltaTime);
-        cubeEntity->returnTransformComp()->updateCube(this, deltaTime);
+        sphereEntity->returnTransformComp()->updateSphere(app, deltaTime);
+        cubeEntity->returnTransformComp()->updateCube(app, deltaTime);
         cameraEntity->returnControllerComp()->update(deltaTime);
         //glm::mat4 VP = cameraEntity->returnCameraComp()->getVPMatrix();
        
@@ -114,8 +118,17 @@ TransformComponent *cubeTransformComp = new TransformComponent();
     }
 };
 
+
+
+
+
 int main(int argc, char **argv)
 {
-
-    return CameraProjectionApplication().run();
+    Project::Application call;
+    AnimationState animation;
+    CubeState cube;
+    bool x = false;
+    call.goToState(&cube);
+    call.goToState(&animation);
+    return call.run();  
 }

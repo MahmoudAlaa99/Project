@@ -5,6 +5,7 @@
 #include <sstream>
 #include <iomanip>
 #include <ctime>
+#include "../main_sources/State_management/state.hpp"
 
 // Include the Dear ImGui implementation headers
 #define IMGUI_IMPL_OPENGL_LOADER_GLAD2
@@ -186,7 +187,13 @@ int Project::Application::run() {
     ImGui_ImplOpenGL3_Init("#version 330 core");
 
     // Call onInitialize if the application needs to do some custom initialization (such as file loading, object creation, etc).
-    onInitialize();
+    // onInitialize();
+    if(next != NULL)
+    {
+        current = next;
+        next = NULL;
+        current->onInitialize(this);
+    }
 
     // The time at which the last frame started. But there was no frames yet, so we'll just pick the current time.
     double last_frame_time = glfwGetTime();
@@ -218,7 +225,16 @@ int Project::Application::run() {
         double current_frame_time = glfwGetTime();
 
         // Call onDraw, in which we will draw the current frame, and send to it the time difference between the last and current frame
-        onDraw(current_frame_time - last_frame_time);
+        if (next!=NULL){
+            if (current!= NULL) current->onDestroy();
+            current=next;
+            next= NULL;
+            current->onInitialize(this);
+        }
+        if (current!=NULL){
+            current->onDraw(current_frame_time - last_frame_time);
+        }
+        //onDraw(current_frame_time - last_frame_time);
         last_frame_time = current_frame_time; // Then update the last frame start time (this frame is now the last frame)
 
 #if defined(ENABLE_OPENGL_DEBUG_MESSAGES)
@@ -253,11 +269,22 @@ int Project::Application::run() {
         // Update the keyboard and mouse data
         keyboard.update();
         mouse.update();
+        if(this->getKeyboard().isPressed(GLFW_KEY_DOWN))
+        {
+            next = gameStates[0];
+        }
+        if(this->getKeyboard().isPressed(GLFW_KEY_UP))
+        {
+            next = gameStates[1];
+        }
     }
 
     // Call for cleaning up
-    onDestroy();
-
+    // onDestroy();
+    if (current != NULL){ 
+        current->onDestroy();
+        gameStates.pop_back();
+    }
     // Shutdown ImGui & destroy the context
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplGlfw_Shutdown();

@@ -5,9 +5,14 @@
 #include <glad/gl.h>
 #include <GLFW/glfw3.h>
 #include <imgui.h>
+#include <vector>
 
 #include "input/keyboard.hpp"
 #include "input/mouse.hpp"
+
+//#include "../main_sources/State_management/state.hpp"
+
+class State;
 
 namespace Project {
 
@@ -25,7 +30,9 @@ namespace Project {
         GLFWwindow * window = nullptr;      // Pointer to the window created by GLFW using "glfwCreateWindow()".
         Keyboard keyboard;                  // Instance of "Project" keyboard class that handles keyboard functionalities.
         Mouse mouse;                        // Instance of "Project" mouse class that handles mouse functionalities.
-
+        State* current;
+        State* next; 
+        std::vector<State*> gameStates;
         // Virtual functions to be overrode and change the default behaviProject of the application
         // according to the example needs.
         virtual void configureOpenGL();                             // This function sets OpenGL Window Hints in GLFW.
@@ -33,6 +40,15 @@ namespace Project {
         virtual void setupCallbacks();                              // Sets-up the window callback functions from GLFW to Project (Mouse/Keyboard) classes.
 
     public:
+        void goToState(State* state)
+        {
+            next = state; 
+            gameStates.push_back(next);  
+        }
+        void switchState(State* state)
+        {
+            
+        }
         virtual void onInitialize(){}                                // Called once before the game loop.
         virtual void onImmediateGui(ImGuiIO& io){}                   // Called every frame to draw the Immediate GUI (if any).
         virtual void onDraw(double deltaTime){}                     // Called every frame in the game loop passing the time taken to draw the frame "Delta time".
