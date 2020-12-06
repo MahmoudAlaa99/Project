@@ -24,12 +24,35 @@ class RenderSystem {
   {
       camera_matrix =manualCam;
   }
-  
+//   void drawNode(const std::shared_ptr<Transform>& node, const glm::mat4& parent_transform_matrix){
+//         glm::mat4 transform_matrix = parent_transform_matrix * node->to_mat4();
+//         if(node->mesh.has_value()){
+//             auto it = meshes.find(node->mesh.value());
+//             if(it != meshes.end()) {
+//                 program.set("tint", node->tint);
+//                 program.set("transform", transform_matrix);
+//                 it->second->draw();
+//             }
+//         }
+//         for(auto& [name, child]: node->children){
+//             drawNode(child, transform_matrix);
+//         }
+//     }
   void renderDraw()
   {
         for(const auto& object : EntityList) {
         object->returnMeshRendererComp()->meshDraw( camera_matrix * (object->returnTransformComp()->getTransform()) );
         }
+    //     for (unsigned int i = 0; i < EntityList.size(); ++i)
+	// {
+    //     std:: shared_ptr<TransformComponent> tptr = EntityList[i]->returnTransformComp();
+    //     //Call this recursive function only on parent nodes
+    //     if(tptr->getParent() == nullptr){
+
+    //         this->drawNode(tptr,viewProjection);
+    //     }
+
+    // }
   }
 
   void addToEntityList(Entity* E)

@@ -36,6 +36,9 @@ public:
         std::cout << "xx";
         parent = parentIn;
     }
+    TransformComponent * getParent(){
+        return parent;
+        }
     glm::mat4 getTransform() const {
         if (parent == NULL)
         {

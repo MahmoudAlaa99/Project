@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Release/MAIN.exe"
+			"path" : "RelWithDebInfo/MAIN.exe"
 		},
 		{
-			"path" : "Release/MAIN.pdb"
+			"path" : "RelWithDebInfo/MAIN.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -59,7 +59,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG  "
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG  "
 				},
 				{
 					"fragment" : "-std:c++17"
@@ -69,34 +69,34 @@
 			[
 				{
 					"backtrace" : 3,
-					"define" : "ASSETS_DIR=\"D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/assets\""
+					"define" : "ASSETS_DIR=\"G:/Uni/Senior-1/Graphics/ProjectGithub/Project/assets\""
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 4,
-					"path" : "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/source/common"
+					"path" : "G:/Uni/Senior-1/Graphics/ProjectGithub/Project/source/common"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/vendor/glfw/include"
+					"path" : "G:/Uni/Senior-1/Graphics/ProjectGithub/Project/vendor/glfw/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/vendor/glad/include"
+					"path" : "G:/Uni/Senior-1/Graphics/ProjectGithub/Project/vendor/glad/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/vendor/glm"
+					"path" : "G:/Uni/Senior-1/Graphics/ProjectGithub/Project/vendor/glm"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/vendor/imgui"
+					"path" : "G:/Uni/Senior-1/Graphics/ProjectGithub/Project/vendor/imgui"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/vendor/utils"
+					"path" : "G:/Uni/Senior-1/Graphics/ProjectGithub/Project/vendor/utils"
 				}
 			],
 			"language" : "CXX",
@@ -120,41 +120,41 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /O2 /Ob2 /DNDEBUG  "
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /Zi /O2 /Ob1 /DNDEBUG  "
 				}
 			],
 			"defines" : 
 			[
 				{
 					"backtrace" : 3,
-					"define" : "ASSETS_DIR=\"D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/assets\""
+					"define" : "ASSETS_DIR=\"G:/Uni/Senior-1/Graphics/ProjectGithub/Project/assets\""
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 4,
-					"path" : "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/source/common"
+					"path" : "G:/Uni/Senior-1/Graphics/ProjectGithub/Project/source/common"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/vendor/glfw/include"
+					"path" : "G:/Uni/Senior-1/Graphics/ProjectGithub/Project/vendor/glfw/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/vendor/glad/include"
+					"path" : "G:/Uni/Senior-1/Graphics/ProjectGithub/Project/vendor/glad/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/vendor/glm"
+					"path" : "G:/Uni/Senior-1/Graphics/ProjectGithub/Project/vendor/glm"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/vendor/imgui"
+					"path" : "G:/Uni/Senior-1/Graphics/ProjectGithub/Project/vendor/imgui"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "D:/CCE/CCE SENIOR 1/graphics/ProjectPhase1/Project/vendor/utils"
+					"path" : "G:/Uni/Senior-1/Graphics/ProjectGithub/Project/vendor/utils"
 				}
 			],
 			"language" : "C",
@@ -167,11 +167,11 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 2,
-			"id" : "glfw::@31bd9730e6b8c71cc656"
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+			"backtrace" : 2,
+			"id" : "glfw::@31bd9730e6b8c71cc656"
 		}
 	],
 	"id" : "MAIN::@6890427a1f51a3e7e1df",
@@ -180,16 +180,16 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:x64 /INCREMENTAL:NO /subsystem:console",
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "vendor\\glfw\\src\\Release\\glfw3.lib",
+				"fragment" : "vendor\\glfw\\src\\RelWithDebInfo\\glfw3.lib",
 				"role" : "libraries"
 			},
 			{
