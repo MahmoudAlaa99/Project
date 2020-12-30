@@ -12,6 +12,13 @@
 #include "../../Entity_component/transform_component.hpp"
 #include <string>
 #include "../State_management/state.hpp"
+#include "../common/texture2D.hpp"
+#include "../common/sampler.hpp"
+struct Vertex {
+    glm::vec3 position;
+    glm::vec<4, glm::uint8, glm::defaultp> color;
+    glm::vec2 tex_coord;
+};
 
 class CubeState : public State
 {
@@ -23,16 +30,20 @@ class CubeState : public State
     Entity *cameraEntity = new Entity();
     Entity* cubeEntity = new Entity();
     RenderSystem render;
+    texture2D tex;
+    samplerClass sampler;
 
     void onInitialize(Project::Application* appToUse) override
     {
         app = appToUse;
-        std::string vertex = "assets/shaders/phase_1/transform.vert";
-        std::string frag = "assets/shaders/phase_1/tint.frag";
+        std::string vertex = "assets/shaders/phase_3/transform.vert";
+        std::string frag = "assets/shaders/phase_3/texture.frag";
         Project::mesh_utils::Cuboid(model, true);
         Project::Mesh *ptr = &model;
         glClearColor(0, 0, 0, 0);
 
+        tex.setTexture("assets/images/monarch.png");
+        sampler.setSampler();
         Project::ShaderProgram *shaderPtr = &program;
          int width, height;
 
@@ -65,8 +76,10 @@ TransformComponent *cubeTransformComp = new TransformComponent();
     }
     void onDraw(double deltaTime) override
     {
-
         glClear(GL_COLOR_BUFFER_BIT);
+
+        GLuint texture = tex.getTexture();
+        texturesamplerBind(texture , sampler.getSampler());
         //cubeEntity->returnTransformComp()->updateCube(app, deltaTime);
         cameraEntity->returnControllerComp()->update(deltaTime);
         //glm::mat4 VP = cameraEntity->returnCameraComp()->getVPMatrix();

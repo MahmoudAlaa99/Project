@@ -1,7 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project>
-  <ProjectOutputs>G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\x64\Debug\ZERO_CHECK;G:\Uni\Senior-1\Graphics\ProjectGithub\Project\build\Debug\MAIN.exe</ProjectOutputs>
-  <ContentFiles></ContentFiles>
-  <SatelliteDlls></SatelliteDlls>
-  <NonRecipeFileRefs></NonRecipeFileRefs>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\CCE\CCE SENIOR 1\graphics\phase 3\Project\build\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\CCE\CCE SENIOR 1\graphics\phase 3\Project\build\Debug\MAIN.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
 </Project>

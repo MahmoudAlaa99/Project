@@ -12,6 +12,7 @@
 #include "../../Entity_component/transform_component.hpp"
 #include <string>
 #include "../State_management/state.hpp"
+#include "../common/texture2D.hpp"
 
 
 class AnimationState : public State
@@ -29,12 +30,15 @@ class AnimationState : public State
     Entity* sphereEntity = new Entity();
     Entity* cubeEntity = new Entity();
     RenderSystem render;
+    texture2D tex;
 
     void onInitialize(Project::Application* appToUse) override
     {
         app = appToUse;
-        std::string vertex = "assets/shaders/phase_1/transform.vert";
-        std::string frag = "assets/shaders/phase_1/tint.frag";
+        // std::string vertex = "assets/shaders/phase_1/transform.vert";
+        // std::string frag = "assets/shaders/phase_1/tint.frag";
+        std::string vertex = "assets/shaders/phase_3/transform.vert";
+        std::string frag = "assets/shaders/phase_3/texture.frag";
         Project::mesh_utils::Cuboid(model, true);
         Project::mesh_utils::Cuboid(model2, true);
         Project::mesh_utils::Sphere(model1, {32, 16}, true);
@@ -43,7 +47,7 @@ class AnimationState : public State
         Project::Mesh *ptr01 = &model1;
         Project::Mesh *ptr02 = &model2;
         glClearColor(0, 0, 0, 0);
-
+        tex.setTexture("assets/images/monarch.png");
         Project::ShaderProgram *shaderPtr = &program;
          int width, height;
 
@@ -92,6 +96,7 @@ TransformComponent *cubeTransformComp = new TransformComponent();
     {
 
         glClear(GL_COLOR_BUFFER_BIT);
+        GLuint texture = tex.getTexture();
         sphereEntity->returnTransformComp()->updateSphere(app, deltaTime);
         cubeEntity->returnTransformComp()->updateCube(app, deltaTime);
         //cubeEntity01->returnTransformComp()->updateSphere(app, deltaTime);

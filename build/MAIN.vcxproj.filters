@@ -1,52 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\source\main_sources\main.cpp">
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\phase 3\Project\source\main_sources\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\source\common\application.cpp">
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\phase 3\Project\source\common\application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\source\common\shader.cpp">
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\phase 3\Project\source\common\shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\source\common\mesh\mesh-utils.cpp">
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\phase 3\Project\source\common\mesh\mesh-utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\source\common\texture\texture-utils.cpp">
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\phase 3\Project\source\common\texture\texture-utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\source\common\texture\screenshot.cpp">
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\phase 3\Project\source\common\texture\screenshot.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\glad\src\gl.c">
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\phase 3\Project\vendor\glad\src\gl.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\imgui\imgui.cpp">
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\phase 3\Project\vendor\imgui\imgui.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\imgui\imgui_demo.cpp">
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\phase 3\Project\vendor\imgui\imgui_demo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\imgui\imgui_draw.cpp">
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\phase 3\Project\vendor\imgui\imgui_draw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\imgui\imgui_widgets.cpp">
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\phase 3\Project\vendor\imgui\imgui_widgets.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\imgui\imgui_impl\imgui_impl_glfw.cpp">
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\phase 3\Project\vendor\imgui\imgui_impl\imgui_impl_glfw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\vendor\imgui\imgui_impl\imgui_impl_opengl3.cpp">
+    <ClCompile Include="D:\CCE\CCE SENIOR 1\graphics\phase 3\Project\vendor\imgui\imgui_impl\imgui_impl_opengl3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="G:\Uni\Senior-1\Graphics\ProjectGithub\Project\CMakeLists.txt" />
+    <CustomBuild Include="D:\CCE\CCE SENIOR 1\graphics\phase 3\Project\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{858A0D4B-5393-34DD-846C-A88DC4837F49}</UniqueIdentifier>
+      <UniqueIdentifier>{CE43B063-3961-35EC-B3AF-7AAC92C050DE}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
