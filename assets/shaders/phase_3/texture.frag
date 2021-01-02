@@ -1,5 +1,5 @@
+#pragma once
 #version 330 core
-
 // Since we are now receiving multiple Varyings, it would be nice to pack them together in what is called an "Interface Block".
 // "Varyings" is just a name for the block (we can choose any name as long as it is the same in the vertex shader).
 // "vsout" is an instance name (we can make an array of the same block and pick any name we want).
@@ -11,7 +11,7 @@ in Varyings {
 } fsin;
 
 uniform vec4 tint;
-uniform sampler2D sampler; // We need a sampler to sample from a texture
+uniform samplerClass sampler; // We need a sampler to sample from a texture
 
 out vec4 frag_color;
 

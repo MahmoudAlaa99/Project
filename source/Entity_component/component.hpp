@@ -4,7 +4,8 @@ enum ComponentType{
   Transformation,
   MeshRenderer,
   Default,
-  CameraController
+  CameraController,
+  Light
 };
 
 class Component
