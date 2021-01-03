@@ -55,31 +55,36 @@ class RenderSystem {
   {
 
         for(int i=0; i<EntityList.size(); i++){
-
+          if(EntityList[i]->returnCameraComp() != NULL ||EntityList[i]->returnLightComp() != NULL)
+            continue;
         mesh_renderer* meshRenderer= EntityList[i]->returnMeshRendererComp();
         Material* materialPtr = meshRenderer->getMaterial();
 
         Project::ShaderProgram* shaderProgram = &(materialPtr->getShaderByNumber());
+
         glUseProgram(*shaderProgram);
+        shaderProgram->set("object_to_world_inv_transpose", glm::inverse(EntityList[i]->returnTransformComp()->getTransform()), true);
+        shaderProgram->set("object_to_world", EntityList[i]->returnTransformComp()->getTransform());
         ///////
-        shaderProgram->set("camera_position", glm::vec3({1,1,1}));
+        shaderProgram->set("camera_position", glm::vec3({10,10,10}));
         shaderProgram->set("view_projection",camera_matrix);
         ///////
         // We will go through all the lights and send the enabled ones to the shader.
         int light_index = 0;
         const int MAX_LIGHT_COUNT = 16;
+        getLights();
         for(const auto& lightEntity : Lights) {
             LightComponent* light = lightEntity->returnLightComp();
             TransformComponent* lightTransform = lightEntity->returnTransformComp();
             if(!(light->enabled)) continue;
+            //std::cout << light->enabled << std::endl;
             std::string prefix = "lights[" + std::to_string(light_index) + "].";
-
             shaderProgram->set(prefix + "type", static_cast<int>(light->lightType));
             shaderProgram->set(prefix + "color", light->color);
-
             switch (light->lightType) {
                 case LightType::DIRECTIONAL:
-                    shaderProgram->set(prefix + "direction", glm::normalize(glm::vec3(lightTransform->rotation)));
+                    shaderProgram->set(prefix + "direction", glm::normalize(glm::vec3{1,-1,1}));
+                    std::cout << "mahmoud" << std::endl;
                     break;
                 case LightType::POINT:
                     shaderProgram->set(prefix + "position", glm::vec3(lightTransform->position));
@@ -103,10 +108,13 @@ class RenderSystem {
 
         }
         shaderProgram->set("light_count", light_index);
+               
     }
-        for(const auto& object : EntityList) {
-        object->returnMeshRendererComp()->meshDraw( camera_matrix * (object->returnTransformComp()->getTransform()) );
-        }
+    for(const auto& object : EntityList) {
+          if(object->returnLightComp() != NULL)
+              continue;
+          object->returnMeshRendererComp()->meshDraw( camera_matrix * (object->returnTransformComp()->getTransform()) );
+    }
     //     for (unsigned int i = 0; i < EntityList.size(); ++i)
 	// {
     //     std:: shared_ptr<TransformComponent> tptr = EntityList[i]->returnTransformComp();

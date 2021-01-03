@@ -5,6 +5,7 @@
 
 #include "../common/texture2D.hpp"
 #include "../common/sampler.hpp"
+//#include "../main_sources/State_management/light_state.hpp"
 
 int main(int argc, char **argv)
 {
@@ -16,3 +17,6 @@ int main(int argc, char **argv)
     call.goToState(&cube);
     return call.run();  
 }
+// int main(int argc, char** argv) {
+//     return LightApplication().run();
+// }

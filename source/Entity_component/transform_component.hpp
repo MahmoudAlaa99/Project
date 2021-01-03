@@ -16,9 +16,9 @@ public:
 
     TransformComponent()
     {
-        position = glm::vec3{1,1,1};
+        position = glm::vec3{-1,-1,-1};
             translation = glm::vec3{0.5,0.5,0.5};
-            rotation = glm::vec3{0,0,0};
+            rotation = glm::vec3{5,5,5};
             scale = glm::vec3{5,5,5};
             Ctype = Transformation;
             direction = false;

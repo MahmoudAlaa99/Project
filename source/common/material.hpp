@@ -42,10 +42,10 @@ class Material
     }
     void setLightShader()
     {
-        this->lightShader.create();
-        this->lightShader.attach("assets/shaders/phase_3/light_transform.vert", GL_VERTEX_SHADER);
-        this->lightShader.attach("assets/shaders/phase_3/light_array.frag", GL_FRAGMENT_SHADER);
-        this->lightShader.link();
+        lightShader.create();
+        lightShader.attach("assets/shaders/phase_3/light_transform.vert", GL_VERTEX_SHADER);
+        lightShader.attach("assets/shaders/phase_3/light_array.frag", GL_FRAGMENT_SHADER);
+        lightShader.link();
     }
     void setMonarchtexture()
     {

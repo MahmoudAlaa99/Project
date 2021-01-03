@@ -16,6 +16,7 @@ class LightComponent : public Component{
     LightType lightType;
     bool enabled;
     glm::vec3 color;
+    glm::vec3 diffuse, specular, ambient;
 
   LightComponent()
   {

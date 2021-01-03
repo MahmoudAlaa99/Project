@@ -44,11 +44,11 @@ void main() {
     vec3 normal = normalize(fsin.normal);
     vec3 view = normalize(fsin.view);
 
-    vec3 ambient = sampled.ambient * (normal.y > 0 ?
+    vec3 ambient =  (normal.y > 0 ?
         mix(sky_light.middle_color, sky_light.top_color, normal.y) :
         mix(sky_light.middle_color, sky_light.bottom_color, -normal.y));
 
-    vec3 accumulated_light = sampled.emissive + ambient;
+    vec3 accumulated_light = ambient;
 
     int count = min(light_count, MAX_LIGHT_COUNT);
     for(int index = 0; index < count; index++){
@@ -72,8 +72,8 @@ void main() {
             }
         }
 
-        vec3 diffuse = sampled.diffuse * light.color * calculate_lambert(normal, light_direction);
-        vec3 specular = sampled.specular * light.color * calculate_phong(normal, light_direction, view, sampled.shininess);
+        vec3 diffuse = vec3(0.1,0.1,0.1) * light.color * calculate_lambert(normal, light_direction);
+        vec3 specular = vec3(0.1,0.1,0.1) * light.color * calculate_phong(normal, light_direction, view, 20.0);
 
         accumulated_light += (diffuse + specular) * attenuation;
     }
