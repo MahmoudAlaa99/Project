@@ -9,6 +9,7 @@
 #include "../Entity_component/fly_camera_controller_component.hpp"
 #include "../Entity_component/transform_component.hpp"
 #include  "../Entity_component/fly_camera_controller_component.hpp"
+#include "../Entity_component/light_component.hpp"
 
 class Entity
 {
@@ -69,6 +70,17 @@ public:
       {
         return (mesh_renderer *)(*i);
       }
+    }
+    return NULL;
+  }
+
+  LightComponent *returnLightComp()
+  {
+    std::vector<Component *>::iterator i;
+    for (i = components.begin(); i != components.end(); i++)
+    {
+      if ((*i)->Ctype == Light)
+        return (LightComponent *)(*i);
     }
     return NULL;
   }

@@ -6,7 +6,7 @@
 class TransformComponent : public Component
 {
 public:
-    glm::mat4 position;
+    glm::vec3 position;
     glm::vec3 translation;
 	glm::vec3 rotation;
 	glm::vec3 scale;
@@ -16,6 +16,7 @@ public:
 
     TransformComponent()
     {
+        position = glm::vec3{1,1,1};
             translation = glm::vec3{0.5,0.5,0.5};
             rotation = glm::vec3{0,0,0};
             scale = glm::vec3{5,5,5};
@@ -52,10 +53,10 @@ public:
                glm::scale(glm::mat4(1.0f), scale));
         }
     }
-    void getPosition()
-    {
-        position*= getTransform();
-    }
+    // void getPosition()
+    // {
+    //     position*= getTransform();
+    // }
     void setRotation(glm::vec3 R){
         rotation = R;
     }

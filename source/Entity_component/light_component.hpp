@@ -12,11 +12,11 @@ enum class LightType {
 };
 
 class LightComponent : public Component{
-  private:
-    LightType type;
+  public:
+    LightType lightType;
     bool enabled;
     glm::vec3 color;
-  public:
+
   LightComponent()
   {
       Ctype = Light;

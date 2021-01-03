@@ -1,4 +1,4 @@
-# Install script for directory: D:/CCE/CCE SENIOR 1/graphics/phase 3/Project/vendor/glfw/src
+# Install script for directory: D:/CCE/CCE SENIOR 1/graphics/temp phase 3/Project/vendor/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
