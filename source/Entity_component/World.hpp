@@ -61,12 +61,23 @@ class RenderSystem {
         Material* materialPtr = meshRenderer->getMaterial();
 
         Project::ShaderProgram* shaderProgram = &(materialPtr->getShaderByNumber());
-
+        GLuint texture;
+        glGenTextures(1, &texture);
+        Project::texture_utils::loadImage(texture,"assets/images/monarch.png");
+                shaderProgram->set("material.albedo_tint",{1.0f, 1.0f, 1.0f});
+                shaderProgram->set("material.specular_tint", {1.0f, 1.0f, 1.0f});
+                shaderProgram->set("material.roughness_range", {0.0f, 1.0f});
+                shaderProgram->set("material.emissive_tint",{1.0f, 1.0f, 1.0f});
+                glActiveTexture(GL_TEXTURE0);
+                glBindTexture(GL_TEXTURE_2D,texture) ;
+                shaderProgram->set("material.albedo_map", 0);
         glUseProgram(*shaderProgram);
         shaderProgram->set("object_to_world_inv_transpose", glm::inverse(EntityList[i]->returnTransformComp()->getTransform()), true);
         shaderProgram->set("object_to_world", EntityList[i]->returnTransformComp()->getTransform());
         ///////
+
         shaderProgram->set("camera_position", glm::vec3({10,10,10}));
+        shaderProgram->set("view_projection",camera_matrix);
         shaderProgram->set("view_projection",camera_matrix);
         ///////
         // We will go through all the lights and send the enabled ones to the shader.
@@ -77,14 +88,12 @@ class RenderSystem {
             LightComponent* light = lightEntity->returnLightComp();
             TransformComponent* lightTransform = lightEntity->returnTransformComp();
             if(!(light->enabled)) continue;
-            //std::cout << light->enabled << std::endl;
             std::string prefix = "lights[" + std::to_string(light_index) + "].";
             shaderProgram->set(prefix + "type", static_cast<int>(light->lightType));
             shaderProgram->set(prefix + "color", light->color);
             switch (light->lightType) {
                 case LightType::DIRECTIONAL:
-                    shaderProgram->set(prefix + "direction", glm::normalize(glm::vec3{1,-1,1}));
-                    std::cout << "mahmoud" << std::endl;
+                    shaderProgram->set(prefix + "direction", glm::normalize(glm::vec3{1,1,1}));
                     break;
                 case LightType::POINT:
                     shaderProgram->set(prefix + "position", glm::vec3(lightTransform->position));

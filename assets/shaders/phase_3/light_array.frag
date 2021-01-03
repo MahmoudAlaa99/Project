@@ -48,7 +48,7 @@ void main() {
         mix(sky_light.middle_color, sky_light.top_color, normal.y) :
         mix(sky_light.middle_color, sky_light.bottom_color, -normal.y));
 
-    vec3 accumulated_light = ambient;
+    vec3 accumulated_light = vec3(1,1,1) + ambient;
 
     int count = min(light_count, MAX_LIGHT_COUNT);
     for(int index = 0; index < count; index++){
@@ -72,7 +72,7 @@ void main() {
             }
         }
 
-        vec3 diffuse = vec3(0.1,0.1,0.1) * light.color * calculate_lambert(normal, light_direction);
+        vec3 diffuse = vec3(1,1,1) * light.color * calculate_lambert(normal, light_direction);
         vec3 specular = vec3(0.1,0.1,0.1) * light.color * calculate_phong(normal, light_direction, view, 20.0);
 
         accumulated_light += (diffuse + specular) * attenuation;
